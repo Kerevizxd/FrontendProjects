@@ -1,0 +1,101 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+:root{
+ --Bright-orange: hsl(31, 77%, 52%);
+ --Dark-cyan: hsl(184, 100%, 22%);
+ --Very-dark-cyan: hsl(179, 100%, 13%);
+ --paragraphs: hsla(0, 0%, 100%, 0.75);
+ --background-heading-button: hsl(0, 0%, 95%);
+}
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body{
+ background-color: var(--background-heading-button);
+ Font-size: 15px;
+}
+.box{
+ min-width: 325px;
+ min-height: 450px;
+ margin: 88px 40px;
+}
+.box-1{
+ background-color: var(--Bright-orange);
+ padding: 45px 50px;
+ border-top-left-radius: 10px;
+ border-top-right-radius: 10px;
+}
+.box-2{
+ background-color: var(--Dark-cyan);
+ padding: 45px 50px;
+}
+.box-3{
+ background-color: var(--Very-dark-cyan);
+ padding: 45px 50px;
+ border-bottom-left-radius: 10px;
+ border-bottom-right-radius: 10px;
+}
+h1{
+ font-family: 'Big Shoulders Display', cursive;
+ text-transform: uppercase;
+ margin-top: 35px;
+ font-size: 2.5rem;
+ color: var(--background-heading-button);
+}
+p{
+ font-family: 'Lexend Deca', sans-serif;
+ line-height: 1.75;
+ margin-top: 20px;
+ padding-right: 1px;
+ color: var(--paragraphs);
+}
+button{
+ margin-top: 20px;
+ background-color: var(--background-heading-button);
+}
+.button-1{
+ font-family: 'Lexend Deca', sans-serif;
+ padding: 15px 35px;
+ border-radius: 50px;
+ border: 1px solid var(--Bright-orange);
+ color: var(--Bright-orange);
+}
+.button-2{
+ font-family: 'Lexend Deca', sans-serif;
+ padding: 15px 35px;
+ border-radius: 50px;
+ border: 1px solid var(--Dark-cyan);
+ color: var(--Dark-cyan);
+}
+.button-3{
+ font-family: 'Lexend Deca', sans-serif;
+ padding: 15px 35px;
+ border-radius: 50px;
+ border: 1px solid var(--Very-dark-cyan) ;
+ color: var(--Very-dark-cyan);
+}
+@media screen and (min-width:1080px) {
+ .box{
+  min-width: 4000px;
+  margin-top: 9rem;
+  margin-left: 20rem;
+ }
+ .box-1, .box-2, .box-3{
+  float: left;
+  width: 300px;
+  border-radius: 0;
+ }
+ .box-1{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+ }
+ .box-3{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+ }
+ button{
+  margin-top: 70px;
+ }
+}
